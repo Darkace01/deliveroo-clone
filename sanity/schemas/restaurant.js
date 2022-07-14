@@ -10,9 +10,9 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'short_Description',
+      name: 'short_description',
       type: 'string',
-      title: 'SHort description',
+      title: 'Short description',
       validation: (Rule) => Rule.max(200),
     },
     {
