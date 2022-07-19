@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
@@ -38,6 +38,14 @@ const BasketScreen = () => {
           >
             <XCircleIcon color='#00CCBB' height={50} width={50} />
           </TouchableOpacity>
+        </View>
+        <View>
+          <Image
+            source={{
+              uri: 'https://links.papareact.com/wru',
+            }}
+            className='h-7 w-7 bg-gray-300 p-4 rounded full'
+          />
         </View>
       </View>
     </SafeAreaView>
